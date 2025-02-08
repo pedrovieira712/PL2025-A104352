@@ -1,9 +1,9 @@
-# PL2025 - Trabalhos Práticos
+# Processamento de Linguagens
 
 ## Identificação
 - **Nome:** Pedro de Seabra Vieira
 - **Número:** A104352
-- ![Foto](/assets/img/foto.png)
+- **Foto:** ![Foto](/assets/img/FotoPerfil.png)
 
 ## Descrição
-Este repositório contém os Trabalhos Práticos da UC PL2025. Cada TPC está organizado em sua respectiva pasta.
+Este repositório contém os TPCs da Unidade Curricular de Processamento de Linguagens 2025. Cada TPC está organizado na sua respectiva pasta.
