@@ -14,11 +14,8 @@ def process_text(text):
             numero_atual = char
 
         else:
-            try:
-                if numero_atual and soma_ativa:
-                    soma += int(numero_atual)
-            except ValueError:
-                pass
+            if numero_atual and soma_ativa:
+                soma += int(numero_atual)
             numero_atual = ''
 
             if i + 1 < len(text):
@@ -34,11 +31,8 @@ def process_text(text):
 
         i += 1
 
-    try:
-        if numero_atual and soma_ativa:
-            soma += int(numero_atual)
-    except ValueError:
-        pass
+    if numero_atual and soma_ativa:
+        soma += int(numero_atual)
     resultados.append(soma)
 
     return resultados
