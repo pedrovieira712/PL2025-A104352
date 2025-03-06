@@ -3,7 +3,7 @@
 ## Identificação
 - **Nome:** Pedro de Seabra Vieira
 - **Número:** A104352
-- **Data:** 13/02/2024
+- **Data:** 13/02/2025
 - **Foto:** 
   ![Foto](/assets/img/FotoPerfil.png)
 
