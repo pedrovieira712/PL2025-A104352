@@ -1,0 +1,52 @@
+{
+    "stock": [
+        {
+            "cod": "A23",
+            "nome": "água 0.5L",
+            "quant": 5,
+            "preco": 0.7
+        },
+        {
+            "cod": "B45",
+            "nome": "refrigerante 0.33L",
+            "quant": 4,
+            "preco": 1.2
+        },
+        {
+            "cod": "C67",
+            "nome": "chocolate preto 100g",
+            "quant": 10,
+            "preco": 0.9
+        },
+        {
+            "cod": "D89",
+            "nome": "sumo laranja 0.2L",
+            "quant": 8,
+            "preco": 1.0
+        },
+        {
+            "cod": "E01",
+            "nome": "barra de cereais",
+            "quant": 12,
+            "preco": 0.5
+        },
+        {
+            "cod": "F34",
+            "nome": "café expresso",
+            "quant": 5,
+            "preco": 0.8
+        },
+        {
+            "cod": "G56",
+            "nome": "sanduíche de frango",
+            "quant": 3,
+            "preco": 2.5
+        },
+        {
+            "cod": "H78",
+            "nome": "batatas fritas 50g",
+            "quant": 7,
+            "preco": 1.3
+        }
+    ]
+}
