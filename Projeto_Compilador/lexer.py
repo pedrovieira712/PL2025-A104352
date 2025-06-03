@@ -18,148 +18,148 @@ tokens = (
     'LPAREN', 'RPAREN', 'LBRACKET', 'RBRACKET', 'COMMA', 'SEMICOLON', 'COLON', 'DOT', 'DOTDOT'
 )
 
-# ===== PALAVRAS RESERVADAS - Definidas com ER específicas (case-insensitive) =====
+# ===== PALAVRAS RESERVADAS - Definidas com ER explícitas para case-insensitive =====
 
-def t_PROGRAM(p):
-    r'(?i)program(?![a-zA-Z0-9_])'
-    return p
+def t_PROGRAM(t):
+    r'[pP][rR][oO][gG][rR][aA][mM]\b'
+    return t
 
-def t_PROCEDURE(p):
-    r'(?i)procedure(?![a-zA-Z0-9_])'
-    return p
+def t_PROCEDURE(t):
+    r'[pP][rR][oO][cC][eE][dD][uU][rR][eE]\b'
+    return t
 
-def t_FUNCTION(p):
-    r'(?i)function(?![a-zA-Z0-9_])'
-    return p
+def t_FUNCTION(t):
+    r'[fF][uU][nN][cC][tT][iI][oO][nN]\b'
+    return t
 
-def t_BEGIN(p):
-    r'(?i)begin(?![a-zA-Z0-9_])'
-    return p
+def t_BEGIN(t):
+    r'[bB][eE][gG][iI][nN]\b'
+    return t
 
-def t_END(p):
-    r'(?i)end(?![a-zA-Z0-9_])'
-    return p
+def t_END(t):
+    r'[eE][nN][dD]\b'
+    return t
 
-def t_CONST(p):
-    r'(?i)const(?![a-zA-Z0-9_])'
-    return p
+def t_CONST(t):
+    r'[cC][oO][nN][sS][tT]\b'
+    return t
 
-def t_TYPE(p):
-    r'(?i)type(?![a-zA-Z0-9_])'
-    return p
+def t_TYPE(t):
+    r'[tT][yY][pP][eE]\b'
+    return t
 
-def t_VAR(p):
-    r'(?i)var(?![a-zA-Z0-9_])'
-    return p
+def t_VAR(t):
+    r'[vV][aA][rR]\b'
+    return t
 
-def t_INTEGER(p):
-    r'(?i)integer(?![a-zA-Z0-9_])'
-    return p
+def t_INTEGER(t):
+    r'[iI][nN][tT][eE][gG][eE][rR]\b'
+    return t
 
-def t_REAL(p):
-    r'(?i)real(?![a-zA-Z0-9_])'
-    return p
+def t_REAL(t):
+    r'[rR][eE][aA][lL]\b'
+    return t
 
-def t_BOOLEAN(p):
-    r'(?i)boolean(?![a-zA-Z0-9_])'
-    return p
+def t_BOOLEAN(t):
+    r'[bB][oO][oO][lL][eE][aA][nN]\b'
+    return t
 
-def t_STRING(p):
-    r'(?i)string(?![a-zA-Z0-9_])'
-    return p
+def t_STRING(t):
+    r'[sS][tT][rR][iI][nN][gG]\b'
+    return t
 
-def t_ARRAY(p):
-    r'(?i)array(?![a-zA-Z0-9_])'
-    return p
+def t_ARRAY(t):
+    r'[aA][rR][rR][aA][yY]\b'
+    return t
 
-def t_OF(p):
-    r'(?i)of(?![a-zA-Z0-9_])'
-    return p
+def t_OF(t):
+    r'[oO][fF]\b'
+    return t
 
-def t_IF(p):
-    r'(?i)if(?![a-zA-Z0-9_])'
-    return p
+def t_IF(t):
+    r'[iI][fF]\b'
+    return t
 
-def t_THEN(p):
-    r'(?i)then(?![a-zA-Z0-9_])'
-    return p
+def t_THEN(t):
+    r'[tT][hH][eE][nN]\b'
+    return t
 
-def t_ELSE(p):
-    r'(?i)else(?![a-zA-Z0-9_])'
-    return p
+def t_ELSE(t):
+    r'[eE][lL][sS][eE]\b'
+    return t
 
-def t_WHILE(p):
-    r'(?i)while(?![a-zA-Z0-9_])'
-    return p
+def t_WHILE(t):
+    r'[wW][hH][iI][lL][eE]\b'
+    return t
 
-def t_DOWNTO(p):
-    r'(?i)downto(?![a-zA-Z0-9_])'
-    return p
+def t_DOWNTO(t):
+    r'[dD][oO][wW][nN][tT][oO]\b'
+    return t
 
-def t_DO(p):
-    r'(?i)do(?![a-zA-Z0-9_])'
-    return p
+def t_DO(t):
+    r'[dD][oO]\b'
+    return t
 
-def t_FOR(p):
-    r'(?i)for(?![a-zA-Z0-9_])'
-    return p
+def t_FOR(t):
+    r'[fF][oO][rR]\b'
+    return t
 
-def t_TO(p):
-    r'(?i)to(?![a-zA-Z0-9_])'
-    return p
+def t_TO(t):
+    r'[tT][oO]\b'
+    return t
 
-def t_DIV(p):
-    r'(?i)div(?![a-zA-Z0-9_])'
-    return p
+def t_DIV(t):
+    r'[dD][iI][vV]\b'
+    return t
 
-def t_MOD(p):
-    r'(?i)mod(?![a-zA-Z0-9_])'
-    return p
+def t_MOD(t):
+    r'[mM][oO][dD]\b'
+    return t
 
-def t_AND(p):
-    r'(?i)and(?![a-zA-Z0-9_])'
-    return p
+def t_AND(t):
+    r'[aA][nN][dD]\b'
+    return t
 
-def t_OR(p):
-    r'(?i)or(?![a-zA-Z0-9_])'
-    return p
+def t_OR(t):
+    r'[oO][rR]\b'
+    return t
 
-def t_NOT(p):
-    r'(?i)not(?![a-zA-Z0-9_])'
-    return p
+def t_NOT(t):
+    r'[nN][oO][tT]\b'
+    return t
 
-def t_TRUE(p):
-    r'(?i)true(?![a-zA-Z0-9_])'
-    return p
+def t_TRUE(t):
+    r'[tT][rR][uU][eE]\b'
+    return t
 
-def t_FALSE(p):
-    r'(?i)false(?![a-zA-Z0-9_])'
-    return p
+def t_FALSE(t):
+    r'[fF][aA][lL][sS][eE]\b'
+    return t
 
-def t_READLN(p):
-    r'(?i)readln(?![a-zA-Z0-9_])'
-    return p
+def t_READLN(t):
+    r'[rR][eE][aA][dD][lL][nN]\b'
+    return t
 
-def t_WRITELN(p):
-    r'(?i)writeln(?![a-zA-Z0-9_])'
-    return p
+def t_WRITELN(t):
+    r'[wW][rR][iI][tT][eE][lL][nN]\b'
+    return t
 
-def t_READ(p):
-    r'(?i)read(?![a-zA-Z0-9_])'
-    return p
+def t_READ(t):
+    r'[rR][eE][aA][dD]\b'
+    return t
 
-def t_WRITE(p):
-    r'(?i)write(?![a-zA-Z0-9_])'
-    return p
+def t_WRITE(t):
+    r'[wW][rR][iI][tT][eE]\b'
+    return t
 
-def t_LENGTH(p):
-    r'(?i)length(?![a-zA-Z0-9_])'
-    return p
+def t_LENGTH(t):
+    r'[lL][eE][nN][gG][tT][hH]\b'
+    return t
 
 # ===== IDENTIFICADORES - DEVE vir DEPOIS das palavras reservadas =====
-def t_ID(p):
+def t_ID(t):
     r'[a-zA-Z][a-zA-Z0-9_]*'
-    return p
+    return t
 
 # ===== OPERADORES E DELIMITADORES =====
 
@@ -192,37 +192,37 @@ t_DOT = r'\.'
 # ===== LITERAIS =====
 
 # Números reais (deve vir antes de inteiros)
-def t_REAL_CONST(p):
+def t_REAL_CONST(t):
     r'\d+\.\d+'
-    p.value = float(p.value)
-    return p
+    t.value = float(t.value)
+    return t
 
 # Números inteiros
-def t_INTEGER_CONST(p):
+def t_INTEGER_CONST(t):
     r'\d+'
-    p.value = int(p.value)
-    return p
+    t.value = int(t.value)
+    return t
 
 # Strings
-def t_STRING_CONST(p):
+def t_STRING_CONST(t):
     r'\'([^\']|\'\')*\''
-    raw_value = p.value[1:-1]  # Remove aspas externas
+    raw_value = t.value[1:-1]  # Remove aspas externas
     processed_value = raw_value.replace("''", "'")
-    p.value = processed_value
-    return p
+    t.value = processed_value
+    return t
 
 # ===== COMENTÁRIOS =====
 
 # Comentários de chaves { ... }
-def t_COMMENT_BRACE(p):
+def t_COMMENT_BRACE(t):
     r'\{[^}]*\}'
-    p.lexer.lineno += p.value.count('\n')
+    t.lexer.lineno += t.value.count('\n')
     pass  # Ignora o comentário
 
 # Comentários de parênteses (* ... *)
-def t_COMMENT_PAREN(p):
+def t_COMMENT_PAREN(t):
     r'$$\*(.|\n)*?\*$$'
-    p.lexer.lineno += p.value.count('\n')
+    t.lexer.lineno += t.value.count('\n')
     pass  # Ignora o comentário
 
 # ===== CONTROLO DE LINHAS E ESPAÇOS =====
@@ -231,15 +231,15 @@ def t_COMMENT_PAREN(p):
 t_ignore = ' \t'
 
 # Quebras de linha
-def t_newline(p):
+def t_newline(t):
     r'\n+'
-    p.lexer.lineno += len(p.value)
+    t.lexer.lineno += len(t.value)
 
 # ===== TRATAMENTO DE ERROS =====
 
-def t_error(p):
-    print(f"Erro léxico: Caractere ilegal '{p.value[0]}' na linha {p.lexer.lineno}")
-    p.lexer.skip(1)
+def t_error(t):
+    print(f"Erro léxico: Caractere ilegal '{t.value[0]}' na linha {t.lexer.lineno}")
+    t.lexer.skip(1)
 
 # ===== CONSTRUÇÃO DO LEXER =====
 
@@ -253,25 +253,3 @@ def test_lexer(data):
     for tok in lexer:
         tokens_list.append((tok.type, tok.value, tok.lineno))
     return tokens_list
-
-# Exemplo de uso
-if __name__ == "__main__":
-    # Teste com OrdenaParcial
-    test_code = """
-    program Test;
-    function OrdenaParcial(a: integer): integer;
-    begin
-        OrdenaParcial := a;
-    end;
-    begin
-        writeln('Teste');
-    end.
-    """
-    
-    print("Analisando o código:")
-    print(test_code)
-    print("\nTokens encontrados:")
-    
-    tokens_result = test_lexer(test_code)
-    for token_type, token_value, line_no in tokens_result:
-        print(f"Linha {line_no}: {token_type} - '{token_value}'")
